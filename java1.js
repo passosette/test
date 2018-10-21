@@ -1,7 +1,7 @@
 
 
     /* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
-    charset= utf-8
+    charset= shift_jis
     
     +++ DATA ENCRYPTION STANDARD (DES) 繧｢繝ｫ繧ｴ繝ｪ繧ｺ繝� +++
     
