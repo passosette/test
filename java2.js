@@ -102,23 +102,23 @@
 		var trip5 = trip_obj5.substr(-10);
 
 		document.getElementById("tripkey1").value = '#'+tripkey1;
-		document.getElementById("trip1").value = '笳�'+trip1;
+		document.getElementById("trip1").value = '◆'+trip1;
 		n += 1;
 
 		document.getElementById("tripkey2").value = '#'+tripkey2;
-		document.getElementById("trip2").value = '笳�'+trip2;
+		document.getElementById("trip2").value = '◆'+trip2;
 		n += 1;
 
 		document.getElementById("tripkey3").value = '#'+tripkey3;
-		document.getElementById("trip3").value = '笳�'+trip3;
+		document.getElementById("trip3").value = '◆'+trip3;
 		n += 1;
 
 		document.getElementById("tripkey4").value = '#'+tripkey4;
-		document.getElementById("trip4").value = '笳�'+trip4;
+		document.getElementById("trip4").value = '◆'+trip4;
 		n += 1;
 
 		document.getElementById("tripkey5").value = '#'+tripkey5;
-		document.getElementById("trip5").value = '笳�'+trip5;
+		document.getElementById("trip5").value = '◆'+trip5;
 		n += 1;
 
 		i += 1;
@@ -157,19 +157,19 @@
 
 		if(rep1 != null)
 		{
-			view_trip += "#"+tripkey1+"	笳�"+trip1+"\r\n";
+			view_trip += "#"+tripkey1+"	"+trip1+"\r\n";
 			flag = 1;
 		}
 
 		if(rep2 != null)
 		{
-			view_trip += "#"+tripkey2+"	笳�"+trip2+"\r\n";
+			view_trip += "#"+tripkey2+"	"+trip2+"\r\n";
 			flag = 1;
 		}
 
 		if(rep3 != null)
 		{
-			view_trip += "#"+tripkey3+"	笳�"+trip3+"\r\n";
+			view_trip += "#"+tripkey3+"	"+trip3+"\r\n";
 			flag = 1;
 		}
 
@@ -215,7 +215,7 @@
 
 		document.getElementById("search").readOnly = false;//讀懃ｴ｢蜈･蜉帙お繝ｪ繧｢繧｢繧ｯ繝�ぅ繝�
 		document.getElementById("place").disabled = false;//讀懃ｴ｢譁ｹ豕輔い繧ｯ繝�ぅ繝�
-		document.getElementById("str").innerHTML = "<b>迴ｾ蝨ｨ縲∵､懃ｴ｢蠕�ｩ滉ｸｭ縺ｧ縺吶�</b>";
+		document.getElementById("str").innerHTML = "<b>現在検索しています</b>";
 	}
 
 	function start()
@@ -242,7 +242,7 @@
 
 				document.getElementById("search").readOnly = true;//讀懃ｴ｢蜈･蜉帙お繝ｪ繧｢髱槭い繧ｯ繝�ぅ繝�
 				document.getElementById("place").disabled = true;//讀懃ｴ｢譁ｹ豕暮撼繧｢繧ｯ繝�ぅ繝�
-				document.getElementById("str").innerHTML = "<b>迴ｾ蝨ｨ縲∵､懃ｴ｢縺励※縺�∪縺吶�</b>";
+				document.getElementById("str").innerHTML = "<b>現在検索しています</b>";
 				search_time_now = new Date();
 			}
 		}
