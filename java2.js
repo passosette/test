@@ -157,31 +157,31 @@
 
 		if(rep1 != null)
 		{
-			view_trip += "#"+tripkey1+"	"+trip1+"\r\n";
+			view_trip += "#"+tripkey1+"	◆"+trip1+"\r\n";
 			flag = 1;
 		}
 
 		if(rep2 != null)
 		{
-			view_trip += "#"+tripkey2+"	"+trip2+"\r\n";
+			view_trip += "#"+tripkey2+"	◆"+trip2+"\r\n";
 			flag = 1;
 		}
 
 		if(rep3 != null)
 		{
-			view_trip += "#"+tripkey3+"	"+trip3+"\r\n";
+			view_trip += "#"+tripkey3+"	◆"+trip3+"\r\n";
 			flag = 1;
 		}
 
 		if(rep4 != null)
 		{
-			view_trip += "#"+tripkey4+"	笳�"+trip4+"\r\n";
+			view_trip += "#"+tripkey4+"	◆"+trip4+"\r\n";
 			flag = 1;
 		}
 
 		if(rep5 != null)
 		{
-			view_trip += "#"+tripkey5+"	笳�"+trip5+"\r\n";
+			view_trip += "#"+tripkey5+"	◆"+trip5+"\r\n";
 			flag = 1;
 		}
 
