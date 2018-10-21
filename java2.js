@@ -42,6 +42,11 @@
 		var rand3 = Math.floor(Math.random()*(9-5)+5);
 		var rand4 = Math.floor(Math.random()*(9-5)+5);
 		var rand5 = Math.floor(Math.random()*(9-5)+5);
+		var rand6 = Math.floor(Math.random()*(9-5)+5);
+		var rand7 = Math.floor(Math.random()*(9-5)+5);
+		var rand8 = Math.floor(Math.random()*(9-5)+5);
+		var rand9 = Math.floor(Math.random()*(9-5)+5);
+		var rand10 = Math.floor(Math.random()*(9-5)+5);
 		*/
 
 		if(i == 0)
