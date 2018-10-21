@@ -64,43 +64,78 @@
 		var tripkey3 = randobet(5,'./');
 		var tripkey4 = randobet(5,'./');
 		var tripkey5 = randobet(5,'./');
-
+		var tripkey6 = randobet(5,'./');
+		var tripkey7 = randobet(5,'./');
+		var tripkey8 = randobet(5,'./');
+		var tripkey9 = randobet(5,'./');
+		var tripkey10 = randobet(5,'./');
+		
 		var tripkey1_2 = randobet(1,'./');
 		var tripkey2_2 = randobet(1,'./');
 		var tripkey3_2 = randobet(1,'./');
 		var tripkey4_2 = randobet(1,'./');
 		var tripkey5_2 = randobet(1,'./');
-
+		var tripkey6_2 = randobet(5,'./');
+		var tripkey7_2 = randobet(5,'./');
+		var tripkey8_2 = randobet(5,'./');
+		var tripkey9_2 = randobet(5,'./');
+		var tripkey10_2 = randobet(5,'./');
+		
 		tripkey1 = tripkey1_2+key+tripkey1;
 		tripkey2 = tripkey2_2+key+tripkey2;
 		tripkey3 = tripkey3_2+key+tripkey3;
 		tripkey4 = tripkey4_2+key+tripkey4;
 		tripkey5 = tripkey5_2+key+tripkey5;
-
+		tripkey6 = tripkey6_2+key+tripkey6;
+		tripkey7 = tripkey7_2+key+tripkey7;
+		tripkey8 = tripkey8_2+key+tripkey8;
+		tripkey9 = tripkey9_2+key+tripkey9;
+		tripkey10 = tripkey10_2+key+tripkey10;
+		
 		var str_obj1 = tripkey1+"H.";
 		var str_obj2 = tripkey2+"H.";
 		var str_obj3 = tripkey3+"H.";
 		var str_obj4 = tripkey4+"H.";
 		var str_obj5 = tripkey5+"H.";
-
+		var str_obj6 = tripkey6+"H.";
+		var str_obj7 = tripkey7+"H.";
+		var str_obj8 = tripkey8+"H.";
+		var str_obj9 = tripkey9+"H.";
+		var str_obj10 = tripkey10+"H.";
+		
 		var salt1 = str_obj1.substr(1,2);
 		var salt2 = str_obj2.substr(1,2);
 		var salt3 = str_obj3.substr(1,2);
 		var salt4 = str_obj4.substr(1,2);
 		var salt5 = str_obj5.substr(1,2);
-
+		var salt6 = str_obj6.substr(1,2);
+		var salt7 = str_obj7.substr(1,2);
+		var salt8 = str_obj8.substr(1,2);
+		var salt9 = str_obj9.substr(1,2);
+		var salt10 = str_obj10.substr(1,2);
+		
 		var trip_obj1 = des.crypt(tripkey1,salt1);
 		var trip_obj2 = des.crypt(tripkey2,salt2);
 		var trip_obj3 = des.crypt(tripkey3,salt3);
 		var trip_obj4 = des.crypt(tripkey4,salt4);
 		var trip_obj5 = des.crypt(tripkey5,salt5);
-
+		var trip_obj6 = des.crypt(tripkey6,salt6);
+		var trip_obj7 = des.crypt(tripkey7,salt7);
+		var trip_obj8 = des.crypt(tripkey8,salt8);
+		var trip_obj9 = des.crypt(tripkey9,salt9);
+		var trip_obj10 = des.crypt(tripkey10,salt10);
+		
 		var trip1 = trip_obj1.substr(-10);
 		var trip2 = trip_obj2.substr(-10);
 		var trip3 = trip_obj3.substr(-10);
 		var trip4 = trip_obj4.substr(-10);
 		var trip5 = trip_obj5.substr(-10);
-
+		var trip6 = trip_obj6.substr(-10);
+		var trip7 = trip_obj7.substr(-10);
+		var trip8 = trip_obj8.substr(-10);
+		var trip9 = trip_obj9.substr(-10);
+		var trip10 = trip_obj10.substr(-10);
+		
 		document.getElementById("tripkey1").value = '#'+tripkey1;
 		document.getElementById("trip1").value = '◆'+trip1;
 		n += 1;
@@ -121,6 +156,26 @@
 		document.getElementById("trip5").value = '◆'+trip5;
 		n += 1;
 
+		document.getElementById("tripkey6").value = '#'+tripkey6;
+		document.getElementById("trip6").value = '◆'+trip6;
+		n += 1;
+		
+		document.getElementById("tripkey7").value = '#'+tripkey7;
+		document.getElementById("trip7").value = '◆'+trip7;
+		n += 1;
+		
+		document.getElementById("tripkey8").value = '#'+tripkey8;
+		document.getElementById("trip8").value = '◆'+trip8;
+		n += 1;
+		
+		document.getElementById("tripkey9").value = '#'+tripkey9;
+		document.getElementById("trip9").value = '◆'+trip9;
+		n += 1;
+		
+		document.getElementById("tripkey10").value = '#'+tripkey10;
+		document.getElementById("trip10").value = '◆'+trip10;
+		n += 1;
+		
 		i += 1;
 
 		var rep1;
@@ -128,6 +183,11 @@
 		var rep3;
 		var rep4;
 		var rep5;
+		var rep6;
+		var rep7;
+		var rep8;
+		var rep9;
+		var rep10;
 		var flag = 0;
 		var view_trip = '';
 
@@ -154,7 +214,12 @@
 		rep3 = trip3.match(reg);
 		rep4 = trip4.match(reg);
 		rep5 = trip5.match(reg);
-
+		rep6 = trip6.match(reg);
+		rep7 = trip7.match(reg);
+		rep8 = trip8.match(reg);
+		rep9 = trip9.match(reg);
+		rep10 = trip10.match(reg);
+		
 		if(rep1 != null)
 		{
 			view_trip += "#"+tripkey1+"	◆"+trip1+"\r\n";
@@ -183,6 +248,35 @@
 		{
 			view_trip += "#"+tripkey5+"	◆"+trip5+"\r\n";
 			flag = 1;
+		}
+		if(rep6 != null)
+		{
+			view_trip += "#"+tripkey6+"	◆"+trip6+"\r\n";
+			flag = 6;
+		}
+
+		if(rep7 != null)
+		{
+			view_trip += "#"+tripkey7+"	◆"+trip7+"\r\n";
+			flag = 7;
+		}
+
+		if(rep8 != null)
+		{
+			view_trip += "#"+tripkey8+"	◆"+trip8+"\r\n";
+			flag = 8;
+		}
+
+		if(rep9 != null)
+		{
+			view_trip += "#"+tripkey9+"	◆"+trip9+"\r\n";
+			flag = 9;
+		}
+
+		if(rep10 != null)
+		{
+			view_trip += "#"+tripkey10+"	◆"+trip10+"\r\n";
+			flag = 10;
 		}
 
 		if(flag == 1)
