@@ -1,1 +1,73 @@
-# test
+<html>
+  <head>
+    <script type="text/javascript" src="./des.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+<link rel="stylesheet" href="./main.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>トリップ作成機</title>
+<script type="text/javascript" charset="UTF-8" src="//cache1.value-domain.com/xrea_header.js" async="async"></script>
+</head>
+<body>
+<div id="main">
+	<table border="0" bgcolor="#00FFFF" cellspacing="1" width="100%">
+	<tr>
+	<td bgcolor="#00FFFF">
+	<div align="center">トリップ作成機</div>
+	</td>
+	</tr>
+	</table>
+
+	<form>
+	<div id="form_box">
+		<table border="0" id="form_table">
+			<tr>
+				<td>
+					<input tyupe="text" id="search" onclick="del_value();">
+				</td>
+				<td>
+					<select id="place">
+					<option selected="selected">- 検索方法 -</option>
+					<option value="1">前方一致</option>
+					<option value="2">後方一致</option>
+					<option value="3">部分一致</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right">
+					<a href="./?p=1">使い方</a>
+					<input type="button" value="開始" id="start">
+					<input type="button" value="停止" id="stop">
+					<input type="reset" value="クリア" id="crear"> 
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="view_box">
+		<div id="str">現在検索待機中です。</div>
+
+		<div id="move">
+			<div id="view">
+				<input type="text" id="tripkey1"> -> <input type="text" id="trip1"><br>
+				<br>
+				<input type="text" id="tripkey2"> -> <input type="text" id="trip2"><br>
+				<br>
+				<input type="text" id="tripkey3"> -> <input type="text" id="trip3"><br>
+				<br>
+				<input type="text" id="tripkey4"> -> <input type="text" id="trip4"><br>
+				<br>
+				<input type="text" id="tripkey5"> -> <input type="text" id="trip5"><br>
+			</div>
+		</div>
+
+		<div id="result_box">
+			<textarea id="result"></textarea>
+		</div>
+
+		<div id="count"></div>
+	</div>
+	</form>
+</div>
+</body>
+</html>
