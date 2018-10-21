@@ -25,9 +25,9 @@
 		document.getElementById("start").onclick = start;
 
 		box = document.getElementById("search");
-		document.getElementById("search").value = "讀懃ｴ｢繝医Μ繝��繧貞�蜉帙＠縺ｦ縺上□縺輔＞";
+		document.getElementById("search").value = "検索トリップを入力してください";
 		box.className = "search_open_style";
-		//document.getElementById("str").innerHTML = "<b>迴ｾ蝨ｨ縲∵､懃ｴ｢蠕�ｩ滉ｸｭ縺ｧ縺吶�</b>";
+		//document.getElementById("str").innerHTML = "<b>現在検索中です。</b>";
 
 		count = 0;
 		n = 0;
@@ -200,7 +200,7 @@
 		var S = Math.floor(T/1000);
 		var Ms = T%1000;
 
-		return_count = "讀懃ｴ｢髢句ｧ九°繧� "+H+":"+M+":"+S+":"+Ms+" 遘堤ｵ後■縺ｾ縺励◆縲�<br>"+n+"讀懃ｴ｢荳ｭ"+count+"莉ｶ繝偵ャ繝医＠縺ｦ縺�∪縺吶�";
+		return_count = "検索開始から "+H+":"+M+":"+S+":"+Ms+" 秒経ちました。<br>"+n+count+"件ヒットしています";
 
 
 		document.getElementById("count").innerHTML = return_count;
@@ -223,15 +223,15 @@
 		set_value = document.getElementById("search").value;
 		place = document.getElementById("place").value;
 
-		if(set_value == '' || set_value == '讀懃ｴ｢繝医Μ繝��繧貞�蜉帙＠縺ｦ縺上□縺輔＞')
+		if(set_value == '' || set_value == '検索トリップを入力してください')
 		{
-			alert('讀懃ｴ｢繝医Μ繝��繧貞�蜉帙＠縺ｦ縺上□縺輔＞縲�');
+			alert('検索トリップを入力してください');
 		}
 		else
 		{
 			if((place != 1) && (place != 2) && (place != 3))
 			{
-				alert('讀懃ｴ｢譁ｹ豕輔ｒ謖�ｮ壹＠縺ｦ縺上□縺輔＞縲�');
+				alert('検索トリップを入力してください');
 			}
 			else
 			{
@@ -272,7 +272,7 @@
 	{
 		var s = document.getElementById("search").value;
 
-		if(s == '讀懃ｴ｢繝医Μ繝��繧貞�蜉帙＠縺ｦ縺上□縺輔＞')
+		if(s == '検索トリップを入力してください')
 		{
 			document.getElementById("search").value = "";
 			box.className = "search_select_style";
